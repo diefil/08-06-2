@@ -67,6 +67,7 @@ function css() {
         outputStyle: "expanded"
       })
     )
+    .pipe(browsersync.stream())
     .pipe(
       group_media()
     )
